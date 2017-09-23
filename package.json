@@ -1,0 +1,23 @@
+{
+  "name": "nytreact",
+  "version": "1.0.0",
+  "description": "MERN app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinSiegel/NYTReact.git"
+  },
+  "author": "Dustin Siegel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinSiegel/NYTReact/issues"
+  },
+  "homepage": "https://github.com/DustinSiegel/NYTReact#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
