@@ -2,13 +2,16 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var articlesSchema = new Schema({
   title: {
-    type: String
+    type: String,
+    required: true
   },
   date: {
-    type: Date
+    type: String,
+    required: true
   },
   url: {
     type: String
+    required: true
   }
 });
 var Articles = mongoose.model("articles", articlesSchema);

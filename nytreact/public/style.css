@@ -1,0 +1,22 @@
+.bannerStyle {
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: maroon;
+}
+
+.titleStyle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  text-decoration: underline;
+  font-stretch: expanded;
+  margin-top: 2%;
+}
+
+.explainerStyle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
