@@ -1,3 +1,4 @@
+
 var axios = require('axios');
 
 var articleQuery = function(topic, beginYear, endYear){
@@ -21,6 +22,7 @@ var articleQuery = function(topic, beginYear, endYear){
             break;
           }
           else {
+
             result.push(response.data.response.docs[i]);
           }
         }
@@ -77,11 +79,8 @@ var apiGet = function(){
       else{
         reject("");
       }
-
     });
-
   });
-
 }
 
 var apiDelete = function(deleteArticleId){
@@ -98,11 +97,8 @@ var apiDelete = function(deleteArticleId){
       else{
         reject("");
       }
-
     });
-
   });
-
 }
 
 module.exports = {

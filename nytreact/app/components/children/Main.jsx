@@ -1,9 +1,8 @@
 var React = require("react");
 
-
-var Query = require("./Query.js");
-var Search = require("./Search.js");
-var Saved = require("./Saved.js");
+var Query = require("./Query.jsx");
+var Search = require("./Search.jsx");
+var Saved = require("./Saved.jsx");
 
 var helpers = require("../utils/helpers.js");
 
@@ -30,7 +29,6 @@ var Main = React.createClass({
     helpers.apiGet().then(function(query){
       this.setState({mongoResults: query.data});
     }.bind(this));
-
   },
 
   componentDidUpdate: function(prevProps, prevState) {
@@ -45,16 +43,14 @@ var Main = React.createClass({
 
   },
 
-
   render: function() {
     return (
 
       <div className="container" style={ {backgroundColor: "white", borderStyle: "solid", borderWidth: "1px"} }>
 
         <div className="page-header">
-          <h1 className="text-center"><img style={ {width: "70%"} } src="img/nyt-header.svg" alt="The New York Times"/></h1>
-          <h2 className="text-center" style={ {marginTop: "-12px"} }><b><i>A React Rendition</i></b></h2>
-          <h4 className="text-center">Search for and annotate articles of interest. Click on headlines to learn more.</h4>
+          <h1 className="text-center">The New York Times Article Search</h1>
+          <h4 className="text-center">Search and annotate articles of interest!</h4>
         </div>
 
         <Query _setSearchFeilds={this._setSearchFeilds} />
