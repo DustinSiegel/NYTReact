@@ -49,8 +49,6 @@ var Search = React.createClass({
         <div className="panel-body">
           <ul className="list-group col-md-8 col-md-offset-2">
 
-            {/* ++++++++++++++++++++++++++++++++ ITERATE HERE ++++++++++++++++++++++++++++++++ */}
-            {/* Here we use a map function to loop through an array in JSX */}
             {this.props.apiResults.map(function(search, i) {
 
               that.state.arrayOfArticles.push({
