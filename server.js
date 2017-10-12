@@ -3,6 +3,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var mongodb = require('mongodb');
 var logger = require('morgan');
+var production = require('dotenv').config()
+
 
 var app = express();
 app.use(logger('dev'));
