@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var mongodb = require('mongodb');
 var logger = require('morgan');
 
 var app = express();
@@ -13,7 +14,9 @@ app.use(express.static(process.cwd() + '/public'));
 
 
 if(process.env.NODE_ENV == 'production'){
-  // mongoose.connect('mongodb://heroku_');
+  mongoose.connect('mongodb://heroku_<dbuser>:<dbpassword>@ds115085.mlab.com:15085/article');
+  // var MongoClient = mongodb.MongoClient;
+  // var url = 'mongodb://<dbuser>:<dbpassword>@ds115085.mlab.com:15085/article');
 }
 else{
   mongoose.connect('mongodb://localhost/nytreact');
